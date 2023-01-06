@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    
+<link rel="stylesheet" href="style.css">
+    
+    <title>perfil de twitter con CSS</title>
+</head>
+<body>
+    
+    <div class="profile-container">
+        <div class="profile">
+            <img src="/Users/codigohache/Documents/pro web/para git/perfil-twitter/logo h_round_blue.png" alt="logo codigo hache">
+            <div class="info">
+                <div class="header">
+                    <div class="photo">
+                        <img src="/Users/codigohache/Documents/pro web/para git/perfil-twitter/logo h_round_blue.png" alt="logo codigo hache">
+                    </div>
+                    <div class="action">
+                        <button>follow</button>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="name"><a href="#">Codigo Hache</a></div>
+                    <div class="username">@codigohache01</div>
+                </div>
+                <div class="description">
+                    Web Developer,  Big Data <a  href="https://github.com/codigohache" target="_blank">GitHub</a>
+                </div>
+
+                <div class="followers-container">
+                    <div class="following">
+                        <a href="#"><span class="number">100k</span>Following</a>
+                    </div>
+
+                    <div class="followers">
+                        <a href="#"><span class="number">1M</span>Followers</a>
+                    </div>
+                </div>
+
+
+                <div class="other">
+                    <a href="#">
+                        <div class="photos">
+                            <img src="https://s10.s3c.es/imag/_v0/1200x655/1/6/9/490x_gates-inversion-2023-educacion-formacion-dreamstime.jpg" alt="">
+                            <img src="https://as01.epimg.net/meristation/imagenes/2022/12/29/betech/1672312836_217596_1672313078_noticia_normal_recorte1.jpg" alt="">
+                            <img src="data:image/jpeg;base64,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" alt="">
+
+
+                        </div>
+
+                        <div class="names">
+                            Elon Musk, Bill Gates and Mark Zuckerberg follow this user.
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
